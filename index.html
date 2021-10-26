@@ -4,9 +4,72 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>DOM intro, selectors and manipulation</title>
+    
   </head>
 
   <body>
+    <h1>To Do List</h1>
+
+    <form action="#" id="new-task-form">
+      <label for="task-input"> Task: </label>
+      <input type="text" name="task" id="task-input" />
+
+      <label for="owner-input">Owner:</label>
+      <input type="text" name="owner" id="owner-input" />
+      <button class="btn-submit">Submit</button>
+    </form>
+
+    <div>
+      <ul id="tasks-list"></ul>
+    </div>
+
+    <!-- part 2 -->
+    <div>
+      <iframe
+        class="three-minions"
+        src="https://giphy.com/embed/MOWPkhRAUbR7i"
+        width="480"
+        height="217"
+        frameborder="0"
+        class="giphy-embed"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <button id="update-button">Update gif</button>
+
+    <form id="myForm">
+      <input id="number" type="number" placeholder="Enter a age">
+      <input id="name" type="text" placeholder="Enter a name">
+      <button type="submit">Submit</button>
+    </form>
+    <ul id="output"></ul>
+    
+    <div id="counter">
+      <div>$<span>0</span></div>
+      <button id="increment" >Add</button>
+      <button id="decrement" >Substract</button>
+    </div>
+    <div id="container">
+      <h1>Fruits and veggies</h1>
+      <div class="list-fruits">
+        <h2>Fruits</h2>
+        <ul class="fruits">
+          <li class="fruit-item">Pear</li>
+          <li class="fruit-item">Strawberry</li>
+          <li class="fruit-item">Plum</li>
+          <li class="fruit-item">Grapes</li>
+        </ul>
+      </div>
+      <div class="list-veggies">
+        <h2>Veggies</h2>
+        <ul class="veggies">
+          <li class="veggie-item">Brocolli</li>
+          <li class="veggie-item">Celery</li>
+          <li class="veggie-item">Potato</li>
+          <li class="veggie-item">Spinach</li>
+        </ul>
+      </div>
+    </div>
     <h1 id="title1">Primary title</h1>
     <h2 id="title2">Secondary title</h2>
 
@@ -26,5 +89,6 @@
     </section>
 
     <!-- load JS file last when DOM already loaded so you can access and manipulate with the DOM elements -->
+    <script src= "script.js" ></script>
   </body>
 </html>
